@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4D30A1D-88C2-4024-8CA7-E43646A9E1AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smileys</RootNamespace>
+    <AssemblyName>Smileys</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>smiling-face-with-open-mouth-and-smiling-eyes.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\angry-face.png" />
+    <Content Include="images\anguished-face.png" />
+    <Content Include="smiling-face-with-open-mouth-and-smiling-eyes.ico" />
+    <None Include="images\astonished-face.png" />
+    <Content Include="images\beer-mug.png" />
+    <Content Include="images\broken-heart.png" />
+    <Content Include="images\clinking-beer-mugs.png" />
+    <Content Include="images\confounded-face.png" />
+    <Content Include="images\confused-face.png" />
+    <Content Include="images\crying-face.png" />
+    <Content Include="images\disappointed-but-relieved-face.png" />
+    <Content Include="images\disappointed-face.png" />
+    <Content Include="images\dizzy-face.png" />
+    <Content Include="images\expressionless-face.png" />
+    <Content Include="images\extraterrestrial-alien.png" />
+    <Content Include="images\face-savouring-delicious-food.png" />
+    <Content Include="images\face-screaming-in-fear.png" />
+    <Content Include="images\face-throwing-a-kiss.png" />
+    <Content Include="images\face-with-cold-sweat.png" />
+    <Content Include="images\face-with-look-of-triumph.png" />
+    <Content Include="images\face-with-medical-mask.png" />
+    <Content Include="images\face-with-open-mouth-and-cold-sweat.png" />
+    <Content Include="images\face-with-open-mouth.png" />
+    <Content Include="images\face-with-stuck-out-tongue-and-tightly-closed-eyes.png" />
+    <Content Include="images\face-with-stuck-out-tongue-and-winking-eye.png" />
+    <Content Include="images\face-with-stuck-out-tongue.png" />
+    <Content Include="images\face-with-tears-of-joy.png" />
+    <Content Include="images\face-without-mouth.png" />
+    <Content Include="images\fearful-face.png" />
+    <Content Include="images\fisted-hand-sign.png" />
+    <Content Include="images\flexed-biceps.png" />
+    <Content Include="images\flushed-face.png" />
+    <Content Include="images\frowning-face-with-open-mouth.png" />
+    <Content Include="images\grimacing-face.png" />
+    <Content Include="images\grinning-face-with-smiling-eyes.png" />
+    <Content Include="images\grinning-face.png" />
+    <Content Include="images\growing-heart.png" />
+    <Content Include="images\hear-no-evil-monkey.png" />
+    <Content Include="images\heavy-black-heart.png" />
+    <Content Include="images\hushed-face.png" />
+    <Content Include="images\imp.png" />
+    <Content Include="images\kiss-mark.png" />
+    <Content Include="images\kissing-face-with-closed-eyes.png" />
+    <Content Include="images\kissing-face-with-smiling-eyes.png" />
+    <Content Include="images\kissing-face.png" />
+    <Content Include="images\loudly-crying-face.png" />
+    <Content Include="images\monkey-face.png" />
+    <Content Include="images\monkey.png" />
+    <Content Include="images\neutral-face.png" />
+    <Content Include="images\ok-hand-sign.png" />
+    <Content Include="images\party-popper.png" />
+    <Content Include="images\pensive-face.png" />
+    <Content Include="images\persevering-face.png" />
+    <Content Include="images\pile-of-poo.png" />
+    <Content Include="images\pouting-face.png" />
+    <Content Include="images\raised-fist.png" />
+    <Content Include="images\raised-hand.png" />
+    <None Include="images\relieved-face.png" />
+    <Content Include="images\see-no-evil-monkey.png" />
+    <Content Include="images\skull.png" />
+    <Content Include="images\sleeping-face.png" />
+    <Content Include="images\sleepy-face.png" />
+    <Content Include="images\smiling-face-with-halo.png" />
+    <Content Include="images\smiling-face-with-heart-shaped-eyes.png" />
+    <Content Include="images\smiling-face-with-horns.png" />
+    <Content Include="images\smiling-face-with-open-mouth-and-cold-sweat.png" />
+    <Content Include="images\smiling-face-with-open-mouth-and-smiling-eyes.png" />
+    <Content Include="images\smiling-face-with-open-mouth-and-tightly-closed-eyes.png" />
+    <Content Include="images\smiling-face-with-open-mouth.png" />
+    <Content Include="images\smiling-face-with-smiling-eyes.png" />
+    <Content Include="images\smiling-face-with-sunglasses.png" />
+    <Content Include="images\smirking-face.png" />
+    <Content Include="images\speak-no-evil-monkey.png" />
+    <Content Include="images\thumbs-down-sign.png" />
+    <Content Include="images\thumbs-up-sign.png" />
+    <Content Include="images\tired-face.png" />
+    <Content Include="images\unamused-face.png" />
+    <Content Include="images\victory-hand.png" />
+    <Content Include="images\weary-face.png" />
+    <Content Include="images\white-smiling-face.png" />
+    <Content Include="images\winking-face.png" />
+    <Content Include="images\worried-face.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
